@@ -1,5 +1,6 @@
 package com.github.hamzaahmedkhan.userinteraction;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -8,6 +9,7 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -53,7 +55,9 @@ public class DashboardActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // TODO: 2020-01-06 Replace this Toast with Input Control lesson
-                Toast.makeText(DashboardActivity.this, "This is input controls", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(DashboardActivity.this, "This is input controls", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(DashboardActivity.this, InputControlActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -61,8 +65,10 @@ public class DashboardActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // TODO: 2020-01-06 Replace this Toast with Menus and Pickers lesson
-                Toast.makeText(DashboardActivity.this, "This is Menus And Pickers", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(DashboardActivity.this, "This is Menus And Pickers", Toast.LENGTH_SHORT).show();
 
+                Intent intent = new Intent(DashboardActivity.this, MenusAndPickersActivity.class);
+                startActivity(intent);
             }
         });
 

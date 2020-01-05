@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">User Interaction Android DevCamp</string>
     <string name="title_activity_dashboard">Dashboard</string>
+    <string name="title_activity_input_control">InputControl</string>
+
+    <string-array name="phone_types_array">
+        <item>Home</item>
+        <item>Work</item>
+        <item>Mobile</item>
+        <item>Other</item>
+    </string-array>
+    <string name="title_activity_menus_and_pickers">MenusAndPickersActivity</string>
+    <string name="action_settings">Settings</string>
+
 </resources>
