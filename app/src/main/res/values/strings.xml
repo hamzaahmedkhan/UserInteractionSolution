@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">User Interaction Android DevCamp</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+</resources>
