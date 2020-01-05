@@ -85,8 +85,10 @@ public class DashboardActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // TODO: 2020-01-06 Replace this Toast with Recycler View lesson
-                Toast.makeText(DashboardActivity.this, "This is User Recycler View", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(DashboardActivity.this, "This is User Recycler View", Toast.LENGTH_SHORT).show();
 
+                Intent intent = new Intent(DashboardActivity.this, RecyclerViewActivity.class);
+                startActivity(intent);
 
             }
         });
