@@ -9,8 +9,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 public class DashboardActivity extends AppCompatActivity {
+
+
+    Button btnClickableImages;
+    Button btnInputControls;
+    Button btnMenusAndPickers;
+    Button btnUserNavigation;
+    Button btnRecyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +27,62 @@ public class DashboardActivity extends AppCompatActivity {
         setContentView(R.layout.activity_dashboard);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
+        // Initializing Views
+        btnClickableImages = findViewById(R.id.btnClickableImages);
+        btnInputControls = findViewById(R.id.btnInputControls);
+        btnMenusAndPickers = findViewById(R.id.btnMenusAndPickers);
+        btnUserNavigation = findViewById(R.id.btnUserNavigation);
+        btnRecyclerView = findViewById(R.id.btnRecyclerView);
+
+
+
+
+        // Setting On Click Listeners
+
+        btnClickableImages.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // TODO: 2020-01-06 Replace this Toast with Clickable Images lesson
+                Toast.makeText(DashboardActivity.this, "This is Clickable images", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        btnInputControls.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // TODO: 2020-01-06 Replace this Toast with Input Control lesson
+                Toast.makeText(DashboardActivity.this, "This is input controls", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        btnMenusAndPickers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // TODO: 2020-01-06 Replace this Toast with Menus and Pickers lesson
+                Toast.makeText(DashboardActivity.this, "This is Menus And Pickers", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+        btnUserNavigation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // TODO: 2020-01-06 Replace this Toast with User Navigation lesson
+                Toast.makeText(DashboardActivity.this, "This is User Navigation", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        btnRecyclerView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // TODO: 2020-01-06 Replace this Toast with Recycler View lesson
+                Toast.makeText(DashboardActivity.this, "This is User Recycler View", Toast.LENGTH_SHORT).show();
+
+
+            }
+        });
 
     }
 
