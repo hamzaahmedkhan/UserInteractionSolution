@@ -34,7 +34,7 @@ public class MenusAndPickersActivity extends AppCompatActivity implements DatePi
         setContentView(R.layout.activity_menus_and_pickers);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,7 +43,7 @@ public class MenusAndPickersActivity extends AppCompatActivity implements DatePi
                         .setAction("Action", null).show();
             }
         });
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         btnDatePicker = findViewById(R.id.btnDatePicker);
         btnDatePicker.setOnClickListener(new View.OnClickListener() {

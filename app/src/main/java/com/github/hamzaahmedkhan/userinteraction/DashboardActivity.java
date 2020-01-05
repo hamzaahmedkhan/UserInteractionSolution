@@ -76,7 +76,8 @@ public class DashboardActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // TODO: 2020-01-06 Replace this Toast with User Navigation lesson
-                Toast.makeText(DashboardActivity.this, "This is User Navigation", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(DashboardActivity.this, UserNavigationActivity.class);
+                startActivity(intent);
             }
         });
 
